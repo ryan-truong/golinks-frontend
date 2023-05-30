@@ -1,4 +1,52 @@
 .card-container{
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
+    background-color: #A8DADC; 
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 8px 3px 3px #1D3557;
+}
+
+.row,.row1{
+    display: flex;
+    flex-direction: row;
+    background-color: #A8DADC;
+    width: 250px;
+    justify-content: center
+}
+
+.row1{
+    margin-top: auto;
+}
+
+.name,.language,.star,.fork, .description,.date{
+    font-size: 20px;
+    text-align: center;
+    color: #1D3557;
+    background-color: #A8DADC; 
+}
+
+.description{
+    margin-top: 10%;
+    overflow: scroll;
+    margin-bottom: 10px;
+}
+.name{
+    color: #E63946;
+    font-size: 30px;
+}
+.language{
+    margin-top: auto;
+}
+.star{
+    padding-right: 25px;
+}
+
+.star-icon,.fork-icon,.kb-icon{
+    background-color: #A8DADC;
+    padding-top: 3px;
+    padding-right: 2px;
 }

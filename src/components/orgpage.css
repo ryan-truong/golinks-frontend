@@ -3,3 +3,9 @@ h1{
     color: #1D3557;
     text-align: center;
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -5,6 +5,7 @@ import {
 
 import Landing from "./components/landing"
 import OrgPage from "./components/orgpage"
+import OrgRepo from "./components/orgrepo"
 
 function App() {
 
@@ -16,6 +17,10 @@ function App() {
     {
       path: "/:organization",
       element: <OrgPage/>
+    },
+    {
+      path: "/:organization/:repo",
+      element: <OrgRepo/>
     }
   ]);
 

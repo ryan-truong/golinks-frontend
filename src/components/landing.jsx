@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import './landing.css'
 
 const Landing = () => {
     const [search, setSearch] = useState('');
@@ -12,14 +13,14 @@ const Landing = () => {
         navigate(`/${search}`)
     }
     return(
-        <div>
-        <h1>Search for an Organization</h1>
+        <div className='wrapper'>
+        <h1>Search For a GitHub Organization</h1>
         <div>
           <div>
             <form onSubmit={handleSubmit}>
-              <div>
+              <div className = 'container'>
                 <label htmlFor="githubOrgSearch" hidden>
-                  Search for an organization
+                  Search For a GitHub Organization
                 </label>
                 <input
                     value={search}
@@ -31,7 +32,7 @@ const Landing = () => {
                     placeholder="Search for a GitHub Organization"
                   />
               </div>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className='container'>
                 Search
               </button>
             </form>

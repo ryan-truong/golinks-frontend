@@ -1,4 +1,3 @@
-import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import { AiFillStar } from "react-icons/ai"
 import { BiFork } from "react-icons/bi";
@@ -6,16 +5,9 @@ import { BsKeyboard } from "react-icons/bs";
 
 import './repocard.css'
 
-const RepoCard = (props) => {
-    const navigate = useNavigate();
-    const location = useLocation();
-
-    const handleClick = (e) => {
-        e.preventDefault();
-        navigate(`${location.pathname}/${props.name}`)
-    }
+const CommitCard = (props) => {
     return(
-        <div className="card-container" onClick ={handleClick}>
+        <div className="card-container" >
             <div className ='name'>{props.name}</div>
             <div className ='description'>{props.description}</div>
             <div className = 'row1'>
@@ -33,7 +25,7 @@ const RepoCard = (props) => {
     )
 }
 
-export default RepoCard;
+export default CommitCard;
 
 RepoCard.propTypes = {
     name: PropTypes.string,
